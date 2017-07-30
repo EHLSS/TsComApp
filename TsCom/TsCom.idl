@@ -1,0 +1,38 @@
+// TsCom.idl : IDL source for TsCom
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (TsCom.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(EC7182B0-BB40-4D55-9F42-980A9491E97A),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface ITsComUser : IDispatch{
+    [id(1)] HRESULT ConnectTS(void);
+    [id(2)] HRESULT CreateTask([in] BSTR taskName, BSTR startTime);
+    [id(3)] HRESULT IsTaskScheduled([in] BSTR taskName, [out] VARIANT_BOOL* isScheduled);
+};
+[
+	uuid(532C9128-3727-4A43-96CC-A60C512EB362),
+	version(1.0),
+]
+library TsComLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(46A42EBD-D7A6-459E-AE61-057B8A2F4930)		
+	]
+	coclass TsComUser
+	{
+		[default] interface ITsComUser;
+	};
+};
+
+import "shobjidl.idl";

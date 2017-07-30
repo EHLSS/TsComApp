@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TsCom", "TsCom\TsCom.vcxproj", "{10E37B10-AD4A-42EC-902A-96B53E80D54E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TsComPS", "TsCom\TsComPS.vcxproj", "{55E44D5B-605E-484E-84D2-CA92FBDD0E34}"
+	ProjectSection(ProjectDependencies) = postProject
+		{10E37B10-AD4A-42EC-902A-96B53E80D54E} = {10E37B10-AD4A-42EC-902A-96B53E80D54E}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TsComApp", "TsComApp\TsComApp.vcxproj", "{8AF06C4C-1900-4076-AC81-2792E5A0DB1B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{10E37B10-AD4A-42EC-902A-96B53E80D54E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{10E37B10-AD4A-42EC-902A-96B53E80D54E}.Debug|Win32.Build.0 = Debug|Win32
+		{10E37B10-AD4A-42EC-902A-96B53E80D54E}.Release|Win32.ActiveCfg = Release|Win32
+		{10E37B10-AD4A-42EC-902A-96B53E80D54E}.Release|Win32.Build.0 = Release|Win32
+		{55E44D5B-605E-484E-84D2-CA92FBDD0E34}.Debug|Win32.ActiveCfg = Debug|Win32
+		{55E44D5B-605E-484E-84D2-CA92FBDD0E34}.Release|Win32.ActiveCfg = Release|Win32
+		{8AF06C4C-1900-4076-AC81-2792E5A0DB1B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8AF06C4C-1900-4076-AC81-2792E5A0DB1B}.Debug|Win32.Build.0 = Debug|Win32
+		{8AF06C4C-1900-4076-AC81-2792E5A0DB1B}.Release|Win32.ActiveCfg = Release|Win32
+		{8AF06C4C-1900-4076-AC81-2792E5A0DB1B}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
